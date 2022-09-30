@@ -35,32 +35,28 @@ body {
 #scroll-container {
   display: grid;
   place-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   margin: auto;
   width: 85%;
-  height: 30px;
+  height: 35px;
   background-color: #7d8953;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 #scroll-track {
   display: flex;
+  justify-content: space-between;
 }
 
 .scroll-text {
   display: flex;
   text-align: center;
   padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 30px;
-  width: 250px;
-}
-
-.scroll-text-small {
-  display: flex;
-  text-align: center;
-  padding: 5px;
-  height: 30px;
-  width: 150px;
+  width: max-content;
 }
 
 #trio-container {
@@ -75,20 +71,53 @@ body {
 }
 
 .information-slider {
+  position: relative;
   height: 70%;
   width: 25%;
   color: #000;
   text-align: center;
   background-color: #fff;
+  overflow: hidden;
+  transition: background-color 1s;
 }
 
 .information-slider-text {
-  margin-top: 120px;
-  justify-content: center;
-  /* font-family: "Montserrat", sans-serif; */
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 45%;
+  bottom: 50%;
+  text-align: center;
   font-weight: 500;
+  font-family: "Playfair Display", serif;
   font-size: 2em;
   font-style: italic;
+}
+
+.sliding-title {
+  margin-bottom: 180px;
+}
+
+#education {
+  margin-bottom: 180px;
+}
+
+#hobbies {
+  margin-bottom: 180px;
+}
+
+#interests {
+  margin-bottom: 180px;
+}
+
+.filler-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6em;
+}
+
+.information-slider-text-hidden {
+  /* display: none; */
 }
 
 .information-slider:hover {
@@ -96,7 +125,13 @@ body {
 }
 
 .information-slider:hover .information-slider-text {
-  display: none;
+  transform: translateY(-240px);
+  transition: 1s 0.5s;
+  color: #fff;
+}
+
+.information-slider:hover .information-slider-text-hidden {
+  display: block;
 }
 
 #inspirational-quote {
