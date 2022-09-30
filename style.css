@@ -59,6 +59,11 @@ body {
   width: max-content;
 }
 
+.timeline-arrow {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #trio-container {
   margin: auto;
   margin-top: 80px;
