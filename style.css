@@ -66,7 +66,7 @@ body {
 #trio-container {
   margin: auto;
   margin-top: 80px;
-  height: 300px;
+  height: 400px;
   width: 85%;
   background-color: #d9c8bc;
   display: flex;
@@ -77,8 +77,26 @@ body {
 .information-slider {
   height: 70%;
   width: 25%;
-  border: 1px solid black;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+}
+
+.information-slider-text {
+  margin-top: 120px;
+  justify-content: center;
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 500;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.information-slider:hover {
   background-color: #7d8953;
+}
+
+.information-slider:hover .information-slider-text {
+  display: none;
 }
 
 #inspirational-quote {
