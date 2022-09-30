@@ -38,7 +38,7 @@ body {
   /* justify-content: space-evenly; */
   margin: auto;
   width: 85%;
-  height: 35px;
+  height: 40px;
   background-color: #7d8953;
   overflow: hidden;
   border-radius: 15px;
@@ -55,13 +55,37 @@ body {
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 30px;
+  /* height: 30px; */
   width: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1em;
 }
 
 .timeline-arrow {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+#timeline-caption-container {
+  width: 85%;
+  margin: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#timeline-caption #upper {
+  display: flex;
+  justify-content: start;
+  color: #a8826a;
+  margin-bottom: 5px;
+}
+
+#timeline-caption #lower {
+  display: flex;
+  justify-content: end;
+  color: #a8826a;
+  margin-top: 5px;
 }
 
 #trio-container {
