@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,800&family=Poppins:ital,wght@0,200;0,400;0,900;1,100;1,200;1,400;1,600;1,800&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #e5d9d1;
 }
 
 #top-navigation {
-  background-color: black;
+  background-color: #e5d9d1;
   max-width: 100%;
   height: 3vh;
 }
@@ -11,18 +18,49 @@ body {
 #my-name {
   text-align: center;
   font-size: 3em;
+  color: #000;
+  background-color: #e5d9d1;
+}
+
+#aneesah {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+#khan {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
 }
 
 #scroll-container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
   justify-content: space-evenly;
   margin: auto;
   width: 85%;
+  height: 30px;
+  background-color: #7d8953;
+  overflow: hidden;
+}
+
+#scroll-track {
+  display: flex;
 }
 
 .scroll-text {
+  display: flex;
   text-align: center;
+  padding: 5px;
+  height: 30px;
+  width: 250px;
+}
+
+.scroll-text-small {
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  height: 30px;
+  width: 150px;
 }
 
 #trio-container {
@@ -30,7 +68,7 @@ body {
   margin-top: 80px;
   height: 300px;
   width: 85%;
-  background-color: rgb(235, 209, 179);
+  background-color: #d9c8bc;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -40,6 +78,7 @@ body {
   height: 70%;
   width: 25%;
   border: 1px solid black;
+  background-color: #7d8953;
 }
 
 #inspirational-quote {
@@ -47,6 +86,10 @@ body {
   margin-top: 80px;
   width: 85%;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #7d8953;
 }
 
 #image-gallery {
@@ -54,10 +97,9 @@ body {
   margin-top: 80px;
   height: 300px;
   width: 85%;
-  background-color: rgb(235, 209, 179);
+  background-color: #e5d9d1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -72,5 +114,5 @@ body {
   margin-top: 80px;
   height: 3vh;
   width: 100%;
-  background-color: black;
+  background-color: #7d8953;
 }
